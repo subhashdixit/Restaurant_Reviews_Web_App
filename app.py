@@ -49,5 +49,5 @@ def predict_placement():
 
 if __name__ == '__main__':
     app.run(debug=True, port = 3000)
-    
+#mvnv,m
     
