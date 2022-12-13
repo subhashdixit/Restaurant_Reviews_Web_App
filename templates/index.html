@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Reviews Classification</title>
+</head>
+<style>
+    h1 {text-align: center;}
+    form {text-align: center;}
+    input {text-align: center;}
+    </style>
+<body>
+
+    <h1>Restaurant Reviews Classification</h1>
+    <!-- Ginga Template : Python in HTML -->
+    <center>
+        {% if result %}
+        <p>{{ result }}</p>
+        {% endif %}
+    </center>
+    
+    <form method="post" action="/predict">
+        <label>Reviews</label><br>
+        <input type="text" name="reviews"><br><br>
+        <input type="submit" value="Predict"><br><br>
+    </form>
+
+</body>
+</html>
